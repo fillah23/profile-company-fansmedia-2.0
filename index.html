@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FansNet - Premium Internet Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas 3D Background -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Particle Network Overlay -->
+    <div class="particle-network"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/logo2-1.png" alt="Fans Media Jember" class="logo-image">
+                <span class="logo-text">Fans<span class="highlight">Net</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Faq</a></li>
+                <li><a href="#technology" class="nav-link">Service</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#partners" class="nav-link">Partners</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="#" class="nav-link">Tools <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://lg.gmdp.net.id/" target="_blank" rel="noopener noreferrer">GMDP Looking Glass</a></li>
+                        <li class="dropdown-submenu">
+                            <a href="#">Monitoring Traffic <span class="submenu-arrow">◀</span></a>
+                            <ul class="submenu">
+                                <li><a href="https://mrtg.fansmediajember.net/" target="_blank" rel="noopener noreferrer">NMS FMJ</a></li>
+                                <li><a href="http://mrtg2.gmdp.net.id/" target="_blank" rel="noopener noreferrer">MRTG GMDP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://stats.uptimerobot.com/QohSUdCKqA" target="_blank" rel="noopener noreferrer">Uptime FMJ</a></li>
+                        <li><a href="https://gmdp.speedtestcustom.com/" target="_blank" rel="noopener noreferrer">Speed Test</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Premium Internet Solutions</div>
+            <h1 class="hero-title">
+                <span class="glitch" data-text="RELIABLE">FANS MEDIA</span>
+                <span class="highlight">JEMBER</span>
+            </h1>
+            <p class="hero-subtitle">Experience an Internet Revolution and Empowering Your Media Presence</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99.9">0</div>
+                    <div class="stat-label">% Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Gbps Speed</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="internet-decoration">
+            <!-- WiFi Signals -->
+            <div class="wifi-signal wifi-1">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <div class="wifi-signal wifi-2">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <!-- Data Packets -->
+            <div class="data-packet packet-1">📦</div>
+            <div class="data-packet packet-2">📦</div>
+            <div class="data-packet packet-3">📦</div>
+            <!-- Router Icon -->
+            <div class="router-icon">
+                <div class="router-body"></div>
+                <div class="antenna antenna-1"></div>
+                <div class="antenna antenna-2"></div>
+                <div class="signal-pulse"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Building the <span class="highlight">Future</span> of Connectivity</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-visual-top">
+                    <div class="animated-illustration-top">
+                        <!-- Data Transfer Visualization -->
+                        <svg class="data-transfer" viewBox="0 0 400 400">
+                            <!-- Main Server Tower -->
+                            <rect x="150" y="100" width="100" height="220" fill="rgba(220, 38, 38, 0.05)" stroke="rgba(220, 38, 38, 0.4)" stroke-width="3" rx="8"/>
+                            <!-- Server Layers -->
+                            <rect x="160" y="120" width="80" height="35" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="2" rx="4">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.4);rgba(220, 38, 38, 0.1)" dur="2s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="160" y="170" width="80" height="35" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="2" rx="4">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.4);rgba(220, 38, 38, 0.1)" dur="2.3s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="160" y="220" width="80" height="35" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="2" rx="4">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.4);rgba(220, 38, 38, 0.1)" dur="2.6s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="160" y="270" width="80" height="35" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="2" rx="4">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.4);rgba(220, 38, 38, 0.1)" dur="2.9s" repeatCount="indefinite"/>
+                            </rect>
+                            <!-- LED Indicators -->
+                            <circle cx="175" cy="137" r="4" fill="#dc2626">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="190" cy="137" r="4" fill="#fbbf24">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="175" cy="187" r="4" fill="#dc2626">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="190" cy="187" r="4" fill="#fbbf24">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Data Upload Arrows -->
+                            <path d="M 200 100 L 200 50" stroke="#fbbf24" stroke-width="3" fill="none" opacity="0">
+                                <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="d" values="M 200 100 L 200 50;M 200 80 L 200 30;M 200 100 L 200 50" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <polygon points="200,30 190,45 210,45" fill="#fbbf24" opacity="0">
+                                <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+                            </polygon>
+                            <!-- Data Download Arrows -->
+                            <path d="M 200 320 L 200 370" stroke="#dc2626" stroke-width="3" fill="none" opacity="0">
+                                <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+                                <animate attributeName="d" values="M 200 320 L 200 370;M 200 340 L 200 390;M 200 320 L 200 370" dur="2.5s" repeatCount="indefinite"/>
+                            </path>
+                            <polygon points="200,390 190,375 210,375" fill="#dc2626" opacity="0">
+                                <animate attributeName="opacity" values="0;0.8;0" dur="2.5s" repeatCount="indefinite"/>
+                            </polygon>
+                            <!-- Side Connections Left -->
+                            <line x1="150" y1="140" x2="80" y2="140" stroke="#dc2626" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,70;70,0" dur="3s" repeatCount="indefinite"/>
+                            </line>
+                            <circle cx="70" cy="140" r="8" fill="#dc2626">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <line x1="150" y1="240" x2="80" y2="240" stroke="#fbbf24" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,70;70,0" dur="3.5s" repeatCount="indefinite"/>
+                            </line>
+                            <circle cx="70" cy="240" r="8" fill="#fbbf24">
+                                <animate attributeName="r" values="8;12;8" dur="2.3s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Side Connections Right -->
+                            <line x1="250" y1="140" x2="320" y2="140" stroke="#fbbf24" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,70;70,0" dur="2.8s" repeatCount="indefinite"/>
+                            </line>
+                            <circle cx="330" cy="140" r="8" fill="#fbbf24">
+                                <animate attributeName="r" values="8;12;8" dur="2.1s" repeatCount="indefinite"/>
+                            </circle>
+                            <line x1="250" y1="240" x2="320" y2="240" stroke="#dc2626" stroke-width="2">
+                                <animate attributeName="stroke-dasharray" values="0,70;70,0" dur="3.2s" repeatCount="indefinite"/>
+                            </line>
+                            <circle cx="330" cy="240" r="8" fill="#dc2626">
+                                <animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Shield/Security Icon -->
+                            <path d="M 200 60 L 180 70 L 180 90 Q 180 110 200 120 Q 220 110 220 90 L 220 70 Z" fill="none" stroke="#fbbf24" stroke-width="2">
+                                <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <!-- Speed Indicator -->
+                            <text x="200" y="355" text-anchor="middle" fill="#dc2626" font-size="20" font-weight="bold">10 Gbps</text>
+                            <!-- Rotating Ring -->
+                            <circle cx="200" cy="210" r="80" fill="none" stroke="rgba(220, 38, 38, 0.2)" stroke-width="2" stroke-dasharray="5,5">
+                                <animateTransform attributeName="transform" type="rotate" from="0 200 210" to="360 200 210" dur="10s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                        <!-- Floating Speed Icons -->
+                        <div class="speed-icon speed-1">🚀</div>
+                        <div class="speed-icon speed-2">⚡</div>
+                        <div class="speed-icon speed-3">💨</div>
+                    </div>
+                </div>
+                <div class="about-text-center">
+                    <p class="lead">Kami Perusahaan yang bergerak di bidang industri teknologi dan menawarkan layanan jaringan telekomunikasi, Internet Penyedia Layanan (ISP) dengan jaminan kecepatan akses bagi pelanggan di segment Rumahan/Broadband, Bisnis, RT/RW net, Corporate, Edukasi, Hospitality dan Pemerintahan dengan dukungan Infrastruktur Fiber Optic yang memadai.</p>
+                    <p>Kami juga menyediakan layanan produksi audio-visual yang mencakup streaming, peliputan acara, pembuatan iklan komersial, dan berbagai kebutuhan lainnya. Dengan fokus utama di wilayah Jember dan sekitarnya, tim broadcast kami siap memberikan pelayanan yang sesuai dengan kebutuhan Anda.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <h3>High-Speed Internet</h3>
+                            <p>Kami menawarkan layanan jasa internet cepat, hemat, dan Unlimited</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Secure & Reliable</h3>
+                            <p>Network security dan monitoring 24/7 untuk proteksi maksimal</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Jaminan Layanan</h3>
+                            <p>ami menggunankan teknologi terbaru untuk menyediakan koneksi internet kepada pelanggan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual-bottom">
+                    <div class="animated-illustration">
+                        <!-- Global Network Illustration -->
+                        <svg class="network-globe" viewBox="0 0 400 400">
+                            <!-- Globe Circle -->
+                            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(220, 38, 38, 0.2)" stroke-width="2"/>
+                            <!-- Latitude lines -->
+                            <ellipse cx="200" cy="200" rx="150" ry="50" fill="none" stroke="rgba(220, 38, 38, 0.15)" stroke-width="1" class="orbit-line"/>
+                            <ellipse cx="200" cy="200" rx="150" ry="100" fill="none" stroke="rgba(220, 38, 38, 0.15)" stroke-width="1" class="orbit-line"/>
+                            <!-- Longitude lines -->
+                            <ellipse cx="200" cy="200" rx="50" ry="150" fill="none" stroke="rgba(220, 38, 38, 0.15)" stroke-width="1" class="orbit-line"/>
+                            <ellipse cx="200" cy="200" rx="100" ry="150" fill="none" stroke="rgba(220, 38, 38, 0.15)" stroke-width="1" class="orbit-line"/>
+                            <!-- Center Vertical -->
+                            <line x1="200" y1="50" x2="200" y2="350" stroke="rgba(220, 38, 38, 0.15)" stroke-width="1"/>
+                            <!-- Network Nodes -->
+                            <circle cx="200" cy="80" r="6" fill="#dc2626" class="network-node node-1">
+                                <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="280" cy="150" r="6" fill="#fbbf24" class="network-node node-2">
+                                <animate attributeName="r" values="6;10;6" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="120" cy="150" r="6" fill="#dc2626" class="network-node node-3">
+                                <animate attributeName="r" values="6;10;6" dur="2.2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="250" cy="250" r="6" fill="#fbbf24" class="network-node node-4">
+                                <animate attributeName="r" values="6;10;6" dur="2.8s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="150" cy="250" r="6" fill="#dc2626" class="network-node node-5">
+                                <animate attributeName="r" values="6;10;6" dur="2.3s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="200" cy="320" r="6" fill="#fbbf24" class="network-node node-6">
+                                <animate attributeName="r" values="6;10;6" dur="2.6s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Connecting Lines -->
+                            <line x1="200" y1="80" x2="280" y2="150" stroke="#dc2626" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <line x1="200" y1="80" x2="120" y2="150" stroke="#dc2626" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <line x1="280" y1="150" x2="250" y2="250" stroke="#fbbf24" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <line x1="120" y1="150" x2="150" y2="250" stroke="#dc2626" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <line x1="250" y1="250" x2="200" y2="320" stroke="#fbbf24" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <line x1="150" y1="250" x2="200" y2="320" stroke="#dc2626" stroke-width="1" opacity="0.3" class="connection-line"/>
+                            <!-- Center pulse -->
+                            <circle cx="200" cy="200" r="10" fill="#dc2626" opacity="0.8">
+                                <animate attributeName="r" values="10;30;10" dur="3s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.8;0;0.8" dur="3s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                        <!-- Floating Icons -->
+                        <div class="floating-icon icon-1">📡</div>
+                        <div class="floating-icon icon-2">🌐</div>
+                        <div class="floating-icon icon-3">⚡</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="services" class="services faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mendaftar internet FansNet?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Selalu mudah untuk melakukan pendaftaran Internet FansNet, Anda bisa menghubungi kontak team admin kami yang terdapat dalam web ini, silahkan hubungi via chat WhatsApp agar segera direspon oleh team kami.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara Melakukan Upgrade atau Downgrade Paket?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Proses dalam melakukan upgrade atau downgrade Paket nantinya akan kami kirimkan Form Perubahan Layanan untuk ditanda tangani bersama sebagai bukti tertulis perubahan Paket Kecepatan maupun Biaya yang nantinya akan dibayarkan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Cari paket internet yang pas untuk bisnis Anda?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Coba dulu gratis selama 24 jam tanpa batasan kecepatan. Rasakan langsung pengalaman internet cepat dan stabil yang kami tawarkan. Setelahnya, Anda bisa memilih paket yang paling sesuai dengan kebutuhan bisnis Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="tech-decoration">
+            <!-- Network Cables -->
+            <svg class="network-cable cable-1" viewBox="0 0 200 200">
+                <path d="M 10 10 Q 50 50 100 50 T 190 10" stroke="#dc2626" stroke-width="2" fill="none" opacity="0.3"/>
+                <circle class="data-flow" r="4" fill="#dc2626">
+                    <animateMotion dur="3s" repeatCount="indefinite">
+                        <mpath href="#path1"/>
+                    </animateMotion>
+                </circle>
+                <path id="path1" d="M 10 10 Q 50 50 100 50 T 190 10" fill="none"/>
+            </svg>
+            <svg class="network-cable cable-2" viewBox="0 0 200 200">
+                <path d="M 10 100 Q 100 20 190 100" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.3"/>
+                <circle class="data-flow" r="4" fill="#fbbf24">
+                    <animateMotion dur="4s" repeatCount="indefinite">
+                        <mpath href="#path2"/>
+                    </animateMotion>
+                </circle>
+                <path id="path2" d="M 10 100 Q 100 20 190 100" fill="none"/>
+            </svg>
+            <!-- Server Rack -->
+            <div class="server-rack">
+                <div class="server-unit">
+                    <div class="led led-1"></div>
+                    <div class="led led-2"></div>
+                    <div class="led led-3"></div>
+                </div>
+                <div class="server-unit">
+                    <div class="led led-1"></div>
+                    <div class="led led-2"></div>
+                    <div class="led led-3"></div>
+                </div>
+                <div class="server-unit">
+                    <div class="led led-1"></div>
+                    <div class="led led-2"></div>
+                    <div class="led led-3"></div>
+                </div>
+            </div>
+            <!-- Computer Monitor -->
+            <div class="monitor">
+                <div class="screen">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+                <div class="monitor-stand"></div>
+            </div>
+            <!-- Electric Pulses -->
+            <div class="electric-pulse pulse-1"></div>
+            <div class="electric-pulse pulse-2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Technology</span>
+                <h2 class="section-title">Next-Gen <span class="highlight">Infrastructure</span></h2>
+            </div>
+            <div class="tech-content">
+                <div class="tech-visual">
+                    <div class="animated-tech-illustration">
+                        <!-- Server Infrastructure SVG -->
+                        <svg class="server-infrastructure" viewBox="0 0 400 400">
+                            <!-- Data Center Building -->
+                            <rect x="100" y="150" width="200" height="180" fill="rgba(220, 38, 38, 0.05)" stroke="rgba(220, 38, 38, 0.3)" stroke-width="2" rx="8"/>
+                            <!-- Server Racks -->
+                            <rect x="120" y="170" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="2s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="220" y="170" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="2.5s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="120" y="220" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="2.2s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="220" y="220" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="2.8s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="120" y="270" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="3s" repeatCount="indefinite"/>
+                            </rect>
+                            <rect x="220" y="270" width="60" height="30" fill="rgba(220, 38, 38, 0.1)" stroke="#dc2626" stroke-width="1" rx="2" class="server-box">
+                                <animate attributeName="fill" values="rgba(220, 38, 38, 0.1);rgba(220, 38, 38, 0.3);rgba(220, 38, 38, 0.1)" dur="2.3s" repeatCount="indefinite"/>
+                            </rect>
+                            <!-- Data Flow Lines -->
+                            <path d="M 200 50 L 200 150" stroke="#dc2626" stroke-width="2" fill="none" opacity="0.4">
+                                <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M 100 250 L 50 250" stroke="#fbbf24" stroke-width="2" fill="none" opacity="0.4">
+                                <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2.5s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M 300 250 L 350 250" stroke="#dc2626" stroke-width="2" fill="none" opacity="0.4">
+                                <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="2.2s" repeatCount="indefinite"/>
+                            </path>
+                            <!-- Cloud -->
+                            <ellipse cx="200" cy="60" rx="40" ry="25" fill="rgba(251, 191, 36, 0.1)" stroke="#fbbf24" stroke-width="2"/>
+                            <circle cx="170" cy="60" r="15" fill="rgba(251, 191, 36, 0.1)" stroke="#fbbf24" stroke-width="2"/>
+                            <circle cx="230" cy="60" r="15" fill="rgba(251, 191, 36, 0.1)" stroke="#fbbf24" stroke-width="2"/>
+                            <!-- Network Nodes Around -->
+                            <circle cx="50" cy="250" r="8" fill="#fbbf24">
+                                <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="350" cy="250" r="8" fill="#dc2626">
+                                <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+                            </circle>
+                            <!-- Signal waves -->
+                            <circle cx="200" cy="200" r="50" fill="none" stroke="#dc2626" stroke-width="1" opacity="0">
+                                <animate attributeName="r" values="50;120;50" dur="4s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0;0.5;0" dur="4s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="200" cy="200" r="50" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0">
+                                <animate attributeName="r" values="50;120;50" dur="4s" begin="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0;0.5;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+                            </circle>
+                        </svg>
+                        <!-- Tech Icons -->
+                        <div class="tech-floating-icon tech-icon-1">💾</div>
+                        <div class="tech-floating-icon tech-icon-2">🔒</div>
+                        <div class="tech-floating-icon tech-icon-3">🚀</div>
+                    </div>
+                </div>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-number">01</div>
+                        <div class="tech-info">
+                            <h3>Support 24/7H</h3>
+                            <p>Kami siap melayani kebutuhan pelanggan 24/7H non stop termasuk hari libur atau libur nasional.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-number">02</div>
+                        <div class="tech-info">
+                            <h3>Gratis Support</h3>
+                            <p>Kami siap membantu setting jaringan/router di sisi pelanggan dengan IT/NOC yang handal di bidang tersebut.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-number">03</div>
+                        <div class="tech-info">
+                            <h3>Memajukan Bisnis Anda</h3>
+                            <p>Kami akan mensupport anda hingga bisnis anda berkembang bersama kami, Fast and Realible Partner.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-number">04</div>
+                        <div class="tech-info">
+                            <h3>Server Cepat & Handal</h3>
+                            <p>Link Backbone NOC kami ke IDC menggunakan fiber optic kapasitas Gigabit.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-number">05</div>
+                        <div class="tech-info">
+                            <h3>Gratis Konsultasi</h3>
+                            <p>Kami mendengarkan dan memberi solusi terbaik masalah seputar jaringan internet, teknisi dan bisnis anda.</p>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-number">06</div>
+                        <div class="tech-info">
+                            <h3>Bantuan Prioritas</h3>
+                            <p>Dengan layanan internet dedicated, Anda akan merasakan kecepatan akses yang stabil dan responsif, memungkinkan Anda bekerja atau bermain secara optimal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Gallery</span>
+                <h2 class="section-title">Our <span class="highlight">Work</span> Portfolio</h2>
+            </div>
+            <div class="gallery-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet1-768x576.jpg" alt="Network Infrastructure">
+                                <div class="gallery-overlay">
+                                    <h3>Network Infrastructure</h3>
+                                    <p>Fiber Optic Installation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet3-768x576.jpg" alt="Data Center">
+                                <div class="gallery-overlay">
+                                    <h3>Data Center</h3>
+                                    <p>Server Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet4-768x432.jpg" alt="Network Operations">
+                                <div class="gallery-overlay">
+                                    <h3>Network Operations</h3>
+                                    <p>24/7 Monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet5-768x432.jpg" alt="Smart City">
+                                <div class="gallery-overlay">
+                                    <h3>Smart City Solutions</h3>
+                                    <p>IoT Integration</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet6-768x432.jpg" alt="Global Network">
+                                <div class="gallery-overlay">
+                                    <h3>Global Network</h3>
+                                    <p>Worldwide Coverage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-slide">
+                            <div class="gallery-image">
+                                <img src="img/gallery/internet8-768x576.jpg" alt="Security Systems">
+                                <div class="gallery-overlay">
+                                    <h3>Security Systems</h3>
+                                    <p>Advanced Protection</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn">
+                    <span>‹</span>
+                </button>
+                <button class="carousel-btn next-btn">
+                    <span>›</span>
+                </button>
+                <div class="carousel-indicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="highlight">Partner</span></h2>
+                <p class="section-description">Kami bangga bekerja sama dengan perusahaan-perusahaan terkemuka di industri teknologi dan telekomunikasi</p>
+            </div>
+            <div class="partners-marquee">
+                <div class="partners-track">
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/huawei_1.png" alt="Huawei">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/mikrotik_1.png" alt="Mikrotik">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/ZTE_1.png" alt="ZTE">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/fs_1.png" alt="FS">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/komdigi_1.png" alt="Kominfo">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/apjii_1.png" alt="APJII">
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/huawei_1.png" alt="Huawei">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/mikrotik_1.png" alt="Mikrotik">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/ZTE_1.png" alt="ZTE">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/fs_1.png" alt="FS">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/komdigi_1.png" alt="Kominfo">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/apjii_1.png" alt="APJII">
+                        </div>
+                    </div>
+                </div>
+                <div class="partners-track partners-track-reverse">
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/idnic_1.png" alt="IDNIC">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/iforte_1.png" alt="iForte">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/gmdp-logo-3.png" alt="GMDP">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/LOGO-Datakom.png" alt="Datakom">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/tis-supercorridor.png" alt="TIS Supercorridor">
+                        </div>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/idnic_1.png" alt="IDNIC">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/iforte_1.png" alt="iForte">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/gmdp-logo-3.png" alt="GMDP">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/LOGO-Datakom.png" alt="Datakom">
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <img src="img/ourpartner/tis-supercorridor.png" alt="TIS Supercorridor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect to the <span class="highlight">Future</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Perum Griya Mangli Indah DF 1A, Wonosari, Mangli, Kec. Kaliwates,
+Kabupaten Jember, Jawa Timur 68136</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>cs@fansmediajember.net</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+62851 7505 9195<br>24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d127686.66394073488!2d113.643767!3d-8.195494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69169279e3537%3A0xfcf2e61fee34377a!2sPT%20Fans%20Vision%20%26%20Fans%20Network%20Jember(GMDP)%20Data%20%26%20Internet%20akses%20Jember!5e1!3m2!1sid!2sus!4v1765367506034!5m2!1sid!2sus"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="img/logo2-1.png" alt="Fans Media Jember" class="logo-image">
+                        <span class="logo-text">Fans<span class="highlight">Net</span></span>
+                    </div>
+                    <div class="footer-powered">
+                        <span>Powered by</span>
+                        <img src="img/LOGO-GMDP-768x306.png" alt="GMDP" class="footer-gmdp-logo">
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#technology">Technology</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#">Home Internet</a>
+                        <a href="#">Business</a>
+                        <a href="#">Cloud Connect</a>
+                        <a href="#">Support</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Tools</h4>
+                        <a href="https://lg.gmdp.net.id/" target="_blank" rel="noopener noreferrer">GMDP Looking Glass</a>
+                        <a href="https://mrtg.fansmediajember.net/" target="_blank" rel="noopener noreferrer">NMS FMJ</a>
+                        <a href="http://mrtg2.gmdp.net.id/" target="_blank" rel="noopener noreferrer">MRTG GMDP</a>
+                        <a href="https://stats.uptimerobot.com/QohSUdCKqA" target="_blank" rel="noopener noreferrer">Uptime FMJ</a>
+                        <a href="https://gmdp.speedtestcustom.com/" target="_blank" rel="noopener noreferrer">Speed Test</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 FansNet - PT. Fans Media Jember</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=6285175059195" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16.002 0C7.164 0 0 7.164 0 16c0 2.826.736 5.587 2.136 8.024L.07 31.902l8.128-2.05A15.908 15.908 0 0016.002 32c8.837 0 16-7.163 16-16s-7.163-16-16-16zm9.395 22.94c-.388 1.094-2.287 2.003-3.147 2.135-.86.132-1.583.388-5.34-1.115-4.796-1.92-7.88-6.788-8.12-7.099-.24-.31-1.951-2.598-1.951-4.957 0-2.36 1.234-3.517 1.671-3.994.436-.477.953-.596 1.272-.596.318 0 .636.002.913.018.293.016.687-.112 1.074.82.388.932 1.326 3.231 1.442 3.467.116.235.194.51.039.82-.155.31-.233.504-.465.776-.232.271-.487.605-.696.812-.232.232-.474.483-.204.948.27.465 1.202 1.98 2.58 3.206 1.776 1.577 3.27 2.067 3.732 2.302.465.232.736.194 1.006-.116.27-.31 1.156-1.35 1.465-1.815.31-.465.62-.388.93-.232.31.155 1.976 1.116 2.31 1.326.333.193.553.31.633.484.08.175.08 1.02-.31 2.115z"/>
+        </svg>
+    </a>
+
+    <script src="three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
