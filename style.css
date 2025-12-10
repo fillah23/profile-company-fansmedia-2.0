@@ -1796,11 +1796,11 @@ section {
 .partners-track {
     display: flex;
     gap: 40px;
-    animation: marqueeScroll 12s linear infinite;
+    animation: marqueeScroll 8s linear infinite;
 }
 
 .partners-track-reverse {
-    animation: marqueeScrollReverse 12s linear infinite;
+    animation: marqueeScrollReverse 8s linear infinite;
 }
 
 .partners-track:hover {
